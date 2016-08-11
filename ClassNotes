@@ -1,0 +1,32 @@
+.homeworkNav{ you need a . to create a class -
+
+  will select anything under the class="homeworkNav" tag- (this is how to reference in HTML)
+}
+
+.homeworkNav a { targets all the a under the homeworkNav
+}
+
+  to reference different atributes on HTML - space between attributyes
+
+  to reference different atributes on CSS - use the (,) comma
+
+  for example <h1>, <h2>, <h3> - changes all the <hs> {
+  	color: purple;
+  }
+
+  what is a child? lis for example,  <ol> <li> - cause <li> is inside the <ol>
+
+  if you have <ol> <li> <a> - the a is a child of the li, not the <nav> 
+
+  when you use the > symbol you are saying: affect the immediate child of this class
+
+  Exact Match combination:
+  	p.myclass { no space in bwetween the p and myclass} 
+
+ nav.homeworknNav { means I only want the class homeworknav that is under the nav tag }
+
+ inline style will overide any CSS that comes from the cascading - it is THE LAST resort when you can't acces the code, header
+
+ Margin, border, padding + add margin+margin and padding+padding and border + border = total "size"
+
+ .featureBox > *:first-child { } pick the FIRST tag, any tag and apply this: 

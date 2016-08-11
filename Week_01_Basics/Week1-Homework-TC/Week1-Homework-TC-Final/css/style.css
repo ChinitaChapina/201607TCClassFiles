@@ -110,3 +110,13 @@ hr {
       font-size: 11pt;
       padding: 5px;
   }
+
+
+.homeworkNav{
+
+  will select anything under the class="homeworkNav" - this is how to reference in HTML
+
+  to reference different atributes on HTML - space between attributyes
+
+  to reference different atributes on CSS - use the (,) comma
+}

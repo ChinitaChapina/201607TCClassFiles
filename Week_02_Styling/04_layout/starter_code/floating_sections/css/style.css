@@ -1,0 +1,51 @@
+/*
+ Floating Sections Code-Along
+
+ Make the header red and 100% width
+ Main should be yellow and 60% wide
+ sideBar should be green and 40% wide
+ pageFooter should be blue and 100% width
+
+ */
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pageHeader {
+	background: red;
+	width: 100%;
+
+}
+
+.main {
+	background: yellow;
+	width: 60%;
+	float: right;
+}
+
+.sideBar {
+	background: green;
+	width: 40%;
+	float: right;
+}
+
+footer {
+	background: blue;
+	width: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+.placeholder {
+	border: 1px solid black;
+	background: rgba(255,255,255,.6);
+	padding: 20px;
+	height: 150px;
+	margin:10px;
+}

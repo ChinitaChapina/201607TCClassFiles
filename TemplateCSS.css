@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+or
+* {
+  box-sizing: border-box;
+}
+and
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
