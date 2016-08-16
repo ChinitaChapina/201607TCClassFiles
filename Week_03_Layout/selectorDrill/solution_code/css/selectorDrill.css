@@ -1,0 +1,144 @@
+/* Header */
+
+.selectorDrillHeader {
+    position:relative;
+    background-color: rgb(10,35,15);
+    color: white;
+    border-bottom: 4px solid rgb(40,85,45);
+    overflow: hidden;
+}
+
+.selectorDrillHeaderInner {
+    max-width:960px;
+    padding: 10px 15px 5px 15px;
+    margin: 0 auto;
+}
+
+.selectorDrillHeaderInner .miniBrand {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.selectorDrillHeaderInner h1 {
+    margin:0;
+    font-size: 36px;
+}
+
+/* Content Containers and Placeholder */
+
+.selectorDrillOuterContainer {
+    max-width:960px;
+    padding: 10px 15px 5px 15px;
+    margin: 0 auto;
+}
+
+.placeholder {
+    background-color: #97d486;
+    width: 200px;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Basic Layout */
+
+.logoAndNavigation {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainSiteContent {
+    width: 660px;
+    float: left;
+    overflow: hidden;
+}
+
+.secondaryContent {
+    width: 280px;
+    float: right;
+    overflow: hidden;
+}
+
+/* Drill */
+/*
+
+In this drill the goal is to be precise with the selector nesting. Make sure that selectors written are as general as can be while ONLY targeting the desired elements.  Use the classes in the html where possible.
+
+*/
+
+
+/*
+1)  Navigation
+    * Make the UL margin: 0;
+    * Float the whole navigation left
+    * Each nav item should have 10px of padding and float left.
+*/
+
+.selectorDrillNavigation {
+    margin: 0;
+    float: left;
+}
+
+.selectorDrillNavigation .placeholder {
+    padding: 10px;
+    float: left;
+}
+
+/*
+2) The Logo
+    * Make the logo 100px square
+    * Set the background color to: #2c97de
+    * Float it left
+*/
+
+.logoAndNavigation > .placeholder {
+    background-color: #2c97de;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    float: left;
+}
+
+/*
+3)  The Main Content
+    * All content items should be 100% wide
+    * Articles should have a background of:#42a2e1
+    * Intro Content should have a background of: #CC6666
+*/
+
+.mainSiteContent .placeholder {
+    width: 100%;
+}
+
+.mainSiteContent > .placeholder {
+    background-color: #CC6666;
+}
+
+.mainSiteContent .articleList .placeholder {
+    background-color: #42a2e1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

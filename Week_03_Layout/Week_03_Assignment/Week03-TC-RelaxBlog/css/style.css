@@ -1,0 +1,267 @@
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    
+    box-sizing: border-box;
+    /* IE */
+}
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+body {
+    background: #f0efef;
+    line-height: 1.4;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #606161;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Center the Container */
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+header {
+    background: #033048;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+header .logo {
+    color: #ffffff;
+    float: left;
+}
+
+nav {
+    float: right;
+    padding-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    font-size: 24px;
+}
+
+nav ul li a {
+    color: #f9e42e;
+}
+
+/* This wraps all the content */
+
+.contentWrapper {
+    /*overflow: hidden;*/
+    
+    width: 90%;
+    padding-top: 80px;
+}
+
+/* Main Content Area - articles go here */
+
+.mainContent {
+    width: 75%;
+    /* overflow: hidden;*/
+    padding-left: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.introText {
+    border-bottom: 1px solid #043049;
+    padding-bottom: 20px;
+    /* overflow: hidden;  The image does not display completly if I leave this, should I leave it off? */
+    
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.articleTitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.articleTitle a {
+    color: #043049;
+}
+
+.introText p {
+    font-size: 24px;
+    line-height: 1.333;
+    color: #606161;
+}
+
+img {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.introText p:first-letter {
+    float: left;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1;
+    margin: -.1em .1em 0 0;
+}
+
+.more {
+    font-weight: 600;
+    text-align: right;
+    color: #043049;
+    padding-bottom: 30px;
+}
+
+.more a {
+    color: #043049;
+    font-weight: 600;
+}
+
+.backToTop {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+}
+
+.backToTop a {
+    color: #888;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* sidebar */
+
+.sideContent {
+    width: 230px;
+    float: right;
+    overflow: hidden;
+    vertical-align: top;
+    color: #888;
+    display: block;
+    /*padding-left: 20px;*/
+}
+
+.sideContent ul {
+    margin-bottom: 40px;
+}
+
+.sideContent ul li a {
+    color: #043049;
+    font-size: 24px;
+}
+
+.sideContent p {
+    font-size: 24px;
+}
+
+.sideItem p {
+    font-size: 22px;
+}
+
+p a {
+    color: #043049;
+    font-weight: 600;
+}
+
+.sideItem h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #043049;
+}
+
+.sideContentMore {
+    font-weight: 600;
+    color: #043049;
+    padding-bottom: 25px;
+}
+
+.sideContentMore a {
+    color: #043049;
+    font-weight: 600;
+}
+
+.sideItemAdd {
+    padding: 20px 0;
+}
+
+/*buttom */
+
+.btn {
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 12px 0;
+    width: 280px;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.ctaBox {
+    background: #f9e42e;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-signup {
+    background: #033048;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+.pageFooter {
+    background: #121212;
+    padding: 65px 0 45px;
+    text-align: center;
+}
+
+.pageFooter .logo {
+    color: #f9e42e;
+    margin-bottom: 68px;
+}
+
+.pageFooter ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 26px 75px;
+}
+
+.pageFooter p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.pageFooter a {
+    color: white;
+}
