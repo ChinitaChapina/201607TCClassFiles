@@ -1,0 +1,69 @@
+jQuery Methods - HTML Manipulation
+
+Other helpful methods:
+
+.css();
+
+$('#some-el').css('background', 'blue');
+
+
+.toggleClass();
+
+$("li").toggleClass("redForm");
+
+
+.hide();
+
+$('#answer1').hide();
+
+
+.slideToggle();
+
+$('#answer3').slideToggle();
+
+
+jQuery Click Event - Named Functions
+
+JavaScript
+
+    document.getElementById('someId').onclick = someFunction
+
+    function someFunction() {
+        // do something
+    }
+jQuery
+
+    $('#someId').click(someFunction)
+
+    function someFunction() {
+        // do something
+    }
+
+
+jQuery Click Event - Anonymous Functions
+
+JavaScript:
+
+    document.getElementById('someId').onclick = function() {
+        // do something
+    }
+jQuery
+
+    $('#someId').click(function() {
+        // do something
+    })
+
+
+Using jQuery - $(document).ready()
+
+Best practice is to write jQuery using the $(document).ready() function:
+
+    $(document).ready(function() {
+
+        // WRITE OTHER CODE HERE!!
+
+    })
+Tells jQuery to wait until HTML/CSS have loaded before executing any JavaScript
+
+Only execute code once the document (DOM) is ready
+
