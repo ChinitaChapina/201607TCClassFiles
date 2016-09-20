@@ -1,0 +1,1665 @@
+@charset "UTF-8";
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  padding-top: 0px;
+  font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5 {
+  color: #005bbb;
+  line-height: 1.2em;
+  font-style: normal;
+  font-weight: 400; }
+
+h1 {
+  font-size: 30px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 14px; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit; }
+
+h1 {
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 10px;
+  line-height: 1.2em; }
+
+p {
+  color: #666;
+  line-height: 1.7em; }
+
+a {
+  color: #005bbb;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+strong {
+  font-weight: 700; }
+
+ul li {
+  color: #666;
+  margin-bottom: 10px; }
+
+div.submitted {
+  font-size: 14px;
+  color: #8996a0; }
+  div.submitted a {
+    color: #8996a0; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+  body header#navbar .container {
+    position: relative; }
+  body.front .content-area {
+    margin-top: 0; }
+  body #page-title-leadership, body #page-title-insights {
+    margin-left: 9%; }
+    @media (min-width: 30.0625em) and (max-width: 64em) {
+      body #page-title-leadership, body #page-title-insights {
+        margin-left: 0; } }
+    @media (min-width: 20em) and (max-width: 30em) {
+      body #page-title-leadership, body #page-title-insights {
+        margin-left: 0; } }
+  body .content-area {
+    height: auto;
+    margin-top: 50px; }
+  body .container {
+    width: 1080px;
+    margin: 0 auto; }
+    body .container .content .title {
+      margin-top: 0; }
+  body #pressplay {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  body .file-video-youtube {
+    position: relative;
+    width: 100%; }
+    body .file-video-youtube .content .file {
+      display: none; }
+  body a.youtube.cboxElement {
+    display: block; }
+  body.front a.youtube.cboxElement {
+    margin-bottom: 40px; }
+  body.page-our-leadership h1 {
+    margin-bottom: 0px !important; }
+  body.page-our-leadership .view .field-content {
+    margin-top: 20px; }
+  body .region-content {
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 0;
+    float: left; }
+    body .region-content p:first-child {
+      margin-top: 0; }
+    body .region-content .field-name-field-position {
+      font-size: 26px;
+      color: #005bbb;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.2em;
+      margin: 20px 0;
+      padding-bottom: 10px; }
+    body .region-content .media-youtube-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: 0; }
+      body .region-content .media-youtube-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  body.node-type-posts .region-content {
+    width: 62%; }
+  body.page-category-news .region-content {
+    width: 50%; }
+    body.page-category-news .region-content .views-field-title {
+      padding-bottom: 10px;
+      margin-top: 11px; }
+    body.page-category-news .region-content .views-field-nothing {
+      font-size: 14px;
+      padding-bottom: 15px;
+      margin-bottom: 6px;
+      color: #8996a0; }
+      body.page-category-news .region-content .views-field-nothing a {
+        text-decoration: none;
+        color: #8996a0; }
+    body.page-category-news .region-content .views-field-body {
+      margin-bottom: 68px; }
+  body.page-category-news .pager {
+    text-align: left;
+    position: relative; }
+    body.page-category-news .pager .pager-next {
+      margin: 0;
+      display: inline-block;
+      float: left; }
+    body.page-category-news .pager .pager-previous {
+      position: absolute;
+      margin: 0;
+      right: 0;
+      display: inline-block; }
+  body.page-category-news .pager-ellipsis, body.page-category-news .element-invisible {
+    display: none; }
+  body.page-node-881 .region-content {
+    width: 50%; }
+  @media (min-width: 30.0625em) and (max-width: 64em) {
+    body.no-sidebars .container {
+      max-width: 91% !important; }
+      body.no-sidebars .container .field-name-field-google-map, body.no-sidebars .container .field-name-field-address {
+        display: block !important;
+        width: 100% !important; }
+    body.no-sidebars.page-category-news .region-content, body.no-sidebars.page-node-881 .region-content {
+      width: 100%; } }
+  @media (min-width: 20em) and (max-width: 30em) {
+    body.no-sidebars .container {
+      max-width: 91% !important; }
+      body.no-sidebars .container .field-name-field-google-map, body.no-sidebars .container .field-name-field-address {
+        display: block !important;
+        width: 100% !important; }
+    body.no-sidebars.page-category-news .region-content, body.no-sidebars.page-node-881 .region-content {
+      width: 100%; } }
+  body .field-name-field-member-image {
+    max-width: 180px;
+    height: auto;
+    float: left;
+    padding: 0px 20px 15px 0px; }
+  body .field-name-body {
+    padding-right: 20px; }
+  body.sidebar-second .tabs {
+    margin-left: 9%;
+    margin-right: 6%; }
+  body.sidebar-second .region-content {
+    margin-left: 9%;
+    margin-right: 3%;
+    width: 53%;
+    padding-right: 15px;
+    float: left; }
+  body.sidebar-second aside {
+    width: 19%;
+    float: left;
+    margin-top: 20px; }
+  body.sidebar-second #block-views-home-page-block {
+    max-width: 520px;
+    margin: 0 60px 0 100px;
+    padding: 0;
+    float: left;
+    float: left; }
+  @media (min-width: 30.0625em) and (max-width: 64em) {
+    body.sidebar-second .container {
+      max-width: 91% !important; }
+      body.sidebar-second .container .view-flexslider .slides li .views-field-body {
+        width: 30%;
+        padding: 20px 20px 0 20px;
+        height: 50%; }
+        body.sidebar-second .container .view-flexslider .slides li .views-field-body .field-content p, body.sidebar-second .container .view-flexslider .slides li .views-field-body h1 {
+          font-size: 15px;
+          line-height: normal; }
+      body.sidebar-second .container .view-flexslider .slides li:nth-child(even) .views-field-body {
+        left: 10%; }
+      body.sidebar-second .container .view-flexslider .slides li:nth-child(odd) .views-field-body {
+        right: 10%; }
+    body.sidebar-second .region-content,
+    body.sidebar-second aside {
+      width: 100% !important;
+      float: none; }
+    body.sidebar-second h1, body.sidebar-second .tabs,
+    body.sidebar-second .region-content {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 15px;
+      padding-right: 15px; }
+    body.sidebar-second #block-views-home-page-block {
+      width: 100%;
+      margin: 0 auto; } }
+  @media (min-width: 20em) and (max-width: 30em) {
+    body.sidebar-second .container {
+      max-width: 91% !important; }
+      body.sidebar-second .container .view-flexslider .slides li .views-field-body {
+        width: 20%;
+        padding: 10px 10px 0 10px;
+        height: 50%; }
+        body.sidebar-second .container .view-flexslider .slides li .views-field-body .field-content p, body.sidebar-second .container .view-flexslider .slides li .views-field-body h1 {
+          font-size: 5px;
+          line-height: normal; }
+      body.sidebar-second .container .view-flexslider .slides li:nth-child(even) .views-field-body {
+        left: 10%; }
+      body.sidebar-second .container .view-flexslider .slides li:nth-child(odd) .views-field-body {
+        right: 10%; }
+    body.sidebar-second .region-content,
+    body.sidebar-second aside {
+      width: 100% !important;
+      float: none; }
+    body.sidebar-second .tabs,
+    body.sidebar-second .region-content {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 15px;
+      padding-right: 15px; }
+    body.sidebar-second .tabs ul li {
+      display: block;
+      width: 100px; }
+      body.sidebar-second .tabs ul li a {
+        width: inherit;
+        display: inline-block;
+        padding-left: 0; }
+    body.sidebar-second #block-views-home-page-block {
+      width: 100%;
+      margin: 0 auto; }
+    body.sidebar-second #footer-widgets .sidebar-2, body.sidebar-second #footer-widgets .sidebar-3 {
+      margin-bottom: 35px; } }
+  body.sidebar-second.page-taxonomy-term .region-content, body.sidebar-second.page-category-white-papers .region-content, body.sidebar-second.page-category-investment-briefs .region-content, body.sidebar-second.page-category-strategic-perspectives .region-content, body.sidebar-second.page-category-fiduciary-insights-governance-outsourcing .region-content, body.sidebar-second.page-category-fiduciary-insights-investment-risk-management .region-content, body.sidebar-second.page-category-library .region-content, body.sidebar-second.page-category-fiduciary-insights-investment-policy .region-content, body.sidebar-second.page-category-multimedia .region-content, body.sidebar-second.page-node-731 .region-content, body.sidebar-second.page-node-737 .region-content {
+    width: 62%; }
+  body .view-home-page h3 {
+    margin-top: 20px; }
+  body #node-727, body #node-887 {
+    margin-left: 100px;
+    border-bottom: 1px solid #eee; }
+    body #node-727 h1.title, body #node-887 h1.title {
+      display: none; }
+    body #node-727 .field-name-body, body #node-887 .field-name-body {
+      margin-bottom: 120px; }
+    body #node-727 .field-name-field-address, body #node-727 .field-name-field-google-map, body #node-887 .field-name-field-address, body #node-887 .field-name-field-google-map {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top; }
+    body #node-727 .field-name-field-address p:first-child, body #node-887 .field-name-field-address p:first-child {
+      font-weight: bold;
+      margin: 0; }
+    body #node-727 .field-name-field-address p:nth-child(2), body #node-887 .field-name-field-address p:nth-child(2) {
+      margin-top: 0; }
+    body #node-727 .content, body #node-887 .content {
+      padding-bottom: 100px; }
+  body #node-762 .field-name-field-market-image-1 img {
+    display: inline;
+    float: left;
+    margin-right: 15px; }
+  body #node-750 .field-name-field-market-image-1 {
+    max-width: 440px; }
+  body .view-market-commentary-downloads .view-content .views-row {
+    margin-bottom: 25px; }
+  body .view-market-commentary-downloads .views-field-title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px; }
+  body .view-market-commentary-downloads .views-field-nothing a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #005bbb;
+    font-weight: 500;
+    text-decoration: none; }
+  body #node-723 {
+    display: none; }
+  body #block-webform-client-block-804 {
+    margin: 100px 0 0 100px; }
+  body #block-block-4 a {
+    text-decoration: none;
+    color: #8996a0; }
+  body #block-views-news-feed-block .views-row-odd, body #block-views-news-feed-block .views-row-even {
+    border-bottom: 1px solid #b8c0c6;
+    margin-bottom: 12px; }
+  body #block-views-news-feed-block .views-field-created .field-content {
+    font-size: 13px;
+    color: #8996a0;
+    line-height: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    word-break: keep-all; }
+  body #block-views-news-feed-block h2 {
+    font-size: 20px;
+    color: #003478;
+    font-weight: 500;
+    margin-top: 20px; }
+  body #block-views-news-feed-block .views-field-title {
+    padding-bottom: 12px; }
+    body #block-views-news-feed-block .views-field-title a {
+      text-decoration: none;
+      color: #005bbb;
+      line-height: 1.7em; }
+  body #block-views-our-leadership-sidebar-block .views-row,
+  body #block-block-6 .views-row {
+    border-top: 1px solid #b8c0c6;
+    padding: 5px 0; }
+  body #block-views-our-leadership-sidebar-block a,
+  body #block-block-6 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #8996a0;
+    line-height: 1.7em; }
+    body #block-views-our-leadership-sidebar-block a::before,
+    body #block-block-6 a::before {
+      content: '» '; }
+  body.page-node-729 aside {
+    width: 33%; }
+  body.page-our-leadership aside, body.page-node-723 aside {
+    width: 26%; }
+    body.page-our-leadership aside ul.menu li, body.page-node-723 aside ul.menu li {
+      margin-left: 15px; }
+  body.front aside {
+    width: 29.65%;
+    padding-bottom: 81px;
+    float: left; }
+  body.page-taxonomy-term-170 aside, body.page-category-library aside, body.page-node-724 aside, body.page-node-731 aside, body.page-category-multimedia aside, body.page-taxonomy-term-165 aside, body.page-category-investment-briefs aside, body.page-category-fiduciary-insights aside, body.page-category-strategic-perspectives aside, body.node-type-team-members aside, body.page-category-white-papers aside, body.page-node-750 aside {
+    width: 25%; }
+  body.page-node-723 h1 {
+    margin-right: 0;
+    margin-bottom: 60px; }
+  body.page-node-723 .content-area {
+    margin-top: 10px; }
+  body.page-node-723 .region-content {
+    margin-right: 12%; }
+  body .view-news .views-field-title a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400; }
+  body .block-sig-email-share {
+    margin-top: 100px; }
+  body .footer-text {
+    font-size: 10px; }
+  body .item-list .pager {
+    text-align: left; }
+    body .item-list .pager .pager-first, body .item-list .pager .pager-last {
+      display: none; }
+    body .item-list .pager .pager-item, body .item-list .pager .pager-next, body .item-list .pager .pager-previous {
+      padding: 5px 10px;
+      background: #c4cacf;
+      color: #373737;
+      cursor: default;
+      margin: 0 7px 0 0; }
+      body .item-list .pager .pager-item a, body .item-list .pager .pager-next a, body .item-list .pager .pager-previous a {
+        color: #373737;
+        text-decoration: none; }
+      body .item-list .pager .pager-item:hover, body .item-list .pager .pager-next:hover, body .item-list .pager .pager-previous:hover {
+        color: #8996a0; }
+    body .item-list .pager .pager-current {
+      padding: 5px 10px;
+      background: #8996a0;
+      color: #ffffff;
+      cursor: default;
+      margin: 0 7px 0 0;
+      font-weight: normal; }
+  body .view-news .item-list .pager .pager-next, body .view-news .item-list .pager .pager-previous {
+    background: none; }
+    body .view-news .item-list .pager .pager-next a, body .view-news .item-list .pager .pager-previous a {
+      color: #005bbb; }
+  body .flex-direction-nav a:before {
+    color: #ffffff; }
+  body .flex-control-paging li a {
+    background: #ffffff; }
+    body .flex-control-paging li a:hover {
+      background: #ffffff;
+      opacity: .7; }
+    body .flex-control-paging li a.flex-active {
+      background-color: #ffffff;
+      opacity: .5; }
+  body .flex-pauseplay a {
+    color: #ffffff; }
+  body .leadership-header {
+    margin: 0 100px; }
+    body .leadership-header img {
+      width: 100%; }
+    @media (min-width: 30.0625em) and (max-width: 64em) {
+      body .leadership-header {
+        margin: 0; } }
+    @media (min-width: 20em) and (max-width: 30em) {
+      body .leadership-header {
+        margin: 0; } }
+
+body header#navbar {
+  height: 160px;
+  border-bottom: 5px solid #c4cacf;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 20em) and (max-width: 30em) {
+    body header#navbar {
+      height: 215px; }
+      body header#navbar #logo {
+        position: absolute;
+        top: 46px; } }
+  @media (min-width: 30.0625em) and (max-width: 57.625em) {
+    body header#navbar {
+      height: 215px; }
+      body header#navbar #logo {
+        position: absolute;
+        top: 46px; }
+      body header#navbar .view-content .views-row-even {
+        margin-left: 0px !important; } }
+
+body header#navbar .menu-bars {
+  display: none; }
+body header#navbar #logo {
+  width: 243px;
+  height: 101px; }
+  body header#navbar #logo img {
+    margin-top: 20px; }
+body header#navbar nav#main-menu {
+  margin-top: 4px; }
+  body header#navbar nav#main-menu ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; }
+    body header#navbar nav#main-menu ul.menu li {
+      float: left;
+      margin: 0 6px 0;
+      display: block; }
+      body header#navbar nav#main-menu ul.menu li a {
+        font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        display: inline-block;
+        color: #8996a0;
+        text-align: left;
+        padding: 7px 0 14px;
+        text-decoration: none;
+        font-size: 18px; }
+        body header#navbar nav#main-menu ul.menu li a.fa:before {
+          width: 15px;
+          display: inline-block;
+          color: #005bbb;
+          font-family: 'FontAwesome'; }
+      body header#navbar nav#main-menu ul.menu li:hover {
+        border-bottom: 10px solid white; }
+      body header#navbar nav#main-menu ul.menu li.active-trail {
+        border-bottom: 10px solid #005bbb; }
+      body header#navbar nav#main-menu ul.menu li.expanded {
+        list-style: none;
+        position: relative; }
+        body header#navbar nav#main-menu ul.menu li.expanded:after {
+          font-family: 'FontAwesome';
+          content: "\f107";
+          width: 20px;
+          display: inline-block;
+          text-align: right;
+          opacity: 0.6; }
+        body header#navbar nav#main-menu ul.menu li.expanded ul.menu {
+          position: absolute;
+          top: 45px;
+          left: -25px;
+          opacity: 0;
+          visibility: hidden;
+          float: none;
+          z-index: 2;
+          width: 250px;
+          box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 0.7);
+          padding-top: 15px;
+          transition: visibility 0s linear 0.2s,opacity 0.2s linear; }
+          body header#navbar nav#main-menu ul.menu li.expanded ul.menu li {
+            background-color: #fff;
+            margin: 0;
+            padding-right: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: inline-block;
+            border: none; }
+            body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a {
+              width: 220px;
+              padding: 10px 36px 10px 10px;
+              box-sizing: border-box;
+              line-height: normal; }
+              body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a:before, body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a:after {
+                font-family: none;
+                content: "";
+                width: auto;
+                display: inherit;
+                text-align: inherit; }
+            body header#navbar nav#main-menu ul.menu li.expanded ul.menu li:last-child a {
+              padding-bottom: 15px; }
+            body header#navbar nav#main-menu ul.menu li.expanded ul.menu li:after {
+              font-family: none;
+              content: "";
+              width: auto;
+              display: inherit;
+              text-align: inherit; }
+            body header#navbar nav#main-menu ul.menu li.expanded ul.menu li.active-trail {
+              border: none; }
+        body header#navbar nav#main-menu ul.menu li.expanded:hover > ul.menu {
+          visibility: visible;
+          opacity: 1;
+          transition-delay: 0s;
+          z-index: 2001; }
+          body header#navbar nav#main-menu ul.menu li.expanded:hover > ul.menu li {
+            padding: 10px 15px; }
+            body header#navbar nav#main-menu ul.menu li.expanded:hover > ul.menu li a:hover {
+              background-color: #F8F8F8; }
+            body header#navbar nav#main-menu ul.menu li.expanded:hover > ul.menu li.active-trail a {
+              color: #005bbb; }
+      body header#navbar nav#main-menu ul.menu li.leaf {
+        list-style: none; }
+      body header#navbar nav#main-menu ul.menu li.collapsed {
+        list-style: none; }
+@media (max-width: 57.625em) {
+  body header#navbar nav#main-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 68%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(137, 150, 160, 0.4);
+    border-top: 3px solid #8996a0;
+    padding: 15px;
+    z-index: 2000; }
+    body header#navbar nav#main-menu ul.menu {
+      float: none; }
+      body header#navbar nav#main-menu ul.menu li {
+        display: block;
+        float: none;
+        border: none;
+        padding: 0;
+        margin: 0; }
+        body header#navbar nav#main-menu ul.menu li.expanded {
+          border: none; }
+          body header#navbar nav#main-menu ul.menu li.expanded ul.menu {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            float: none;
+            box-shadow: none;
+            width: inherit;
+            padding: 0;
+            margin: 0; }
+            body header#navbar nav#main-menu ul.menu li.expanded ul.menu li {
+              padding: 15px 25px;
+              margin: 0;
+              display: block;
+              float: none;
+              border-bottom: 1px solid #F8F8F8; }
+              body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a {
+                font-weight: normal;
+                background: none;
+                padding: 0; }
+                body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a:before, body header#navbar nav#main-menu ul.menu li.expanded ul.menu li a:after {
+                  content: none; }
+          body header#navbar nav#main-menu ul.menu li.expanded:hover ul.menu li {
+            padding: 15px 25px; }
+            body header#navbar nav#main-menu ul.menu li.expanded:hover ul.menu li a {
+              display: inline-block;
+              width: 100%; }
+              body header#navbar nav#main-menu ul.menu li.expanded:hover ul.menu li a:hover {
+                background: none; }
+          body header#navbar nav#main-menu ul.menu li.expanded:after {
+            content: none; }
+        body header#navbar nav#main-menu ul.menu li a {
+          background-color: #F8F8F8;
+          width: 100%;
+          padding: 15px 10px;
+          box-sizing: border-box;
+          font-size: 14px;
+          font-weight: bold; }
+          body header#navbar nav#main-menu ul.menu li a:hover {
+            color: #000; }
+        body header#navbar nav#main-menu ul.menu li:hover {
+          border: none; }
+  body header#navbar .menu-bars {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    cursor: pointer;
+    border: 2px solid #8996a0;
+    border-radius: 40px;
+    height: 35px;
+    padding: 8px 5px; }
+    body header#navbar .menu-bars .icon-bar {
+      display: block;
+      width: 20px;
+      background: #8996a0;
+      margin-bottom: 4px;
+      height: 2px; } }
+body header .menu .menu .menu {
+  display: none; }
+
+body header#navbar nav#secondary-menu {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  body header#navbar nav#secondary-menu ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    body header#navbar nav#secondary-menu ul.menu li {
+      float: left;
+      margin: 0;
+      display: block;
+      padding: 0; }
+      body header#navbar nav#secondary-menu ul.menu li a {
+        padding: 14px 10px 16px 10px;
+        display: block;
+        background-color: #8996a0;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 300; }
+      body header#navbar nav#secondary-menu ul.menu li.first a {
+        padding-left: 20px; }
+      body header#navbar nav#secondary-menu ul.menu li.last a {
+        padding-right: 20px; }
+@media (max-width: 57.625em) {
+  body header#navbar nav#secondary-menu {
+    left: -5%;
+    background-color: #8996a0;
+    width: 110%; }
+    body header#navbar nav#secondary-menu ul.menu {
+      display: table;
+      margin: 0 auto; }
+      body header#navbar nav#secondary-menu ul.menu li a {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+@media (max-width: 57.625em) {
+  body.logged-in header#navbar nav#secondary-menu ul.menu li a {
+    font-size: 12px; } }
+
+body .search {
+  width: 216px;
+  position: absolute;
+  top: 65px;
+  right: 0; }
+  body .search form {
+    border-bottom: 1px solid #d7dce0; }
+    body .search form.search-form {
+      position: relative;
+      height: 29px; }
+      body .search form.search-form label {
+        display: none; }
+      body .search form.search-form input {
+        width: 191px;
+        border: none;
+        background: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #8996a0; }
+      body .search form.search-form button {
+        border: none;
+        background: none;
+        color: #d7dce0;
+        font-size: 20px;
+        float: right;
+        position: absolute; }
+        body .search form.search-form button:hover {
+          color: #8996a0; }
+  @media (min-width: 20em) and (max-width: 30em) {
+    body .search form.search-form {
+      display: none; } }
+  @media (min-width: 30.0625em) and (max-width: 57.625em) {
+    body .search {
+      width: 200px; }
+      body .search form.search-form input {
+        width: 170px; } }
+
+body.not-front aside ul.menu {
+  padding-left: 0; }
+  body.not-front aside ul.menu li {
+    list-style: none;
+    border-top: 1px solid #dbdfe2; }
+    body.not-front aside ul.menu li a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #8996a0;
+      display: inline-block;
+      padding: 10px 0 15px;
+      font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif; }
+      body.not-front aside ul.menu li a:hover {
+        color: #666; }
+      body.not-front aside ul.menu li a.active, body.not-front aside ul.menu li a.active-trail {
+        color: #005bbb; }
+      body.not-front aside ul.menu li a.fa:before {
+        width: 15px;
+        display: inline-block;
+        font-family: 'FontAwesome'; }
+  body.not-front aside ul.menu .leaf a::before {
+    width: 15px;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    content: "\f101"; }
+body.not-front.page-our-leadership .block-views .view-header p, body.not-front.node-type-team-members .block-views .view-header p, body.not-front.page-node-723 .block-views .view-header p {
+  border-top: 1px solid #dbdfe2;
+  margin: 0; }
+body.not-front.page-our-leadership .block-views .view-header a, body.not-front.node-type-team-members .block-views .view-header a, body.not-front.page-node-723 .block-views .view-header a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #8996a0;
+  display: inline-block;
+  padding: 4px 0 4px;
+  font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif; }
+body.not-front.page-our-leadership .views-field-title .field-content a, body.not-front.node-type-team-members .views-field-title .field-content a, body.not-front.page-node-723 .views-field-title .field-content a {
+  padding: 4px 0 4px; }
+body.not-front div.mail-list a {
+  background: #f5f5f5;
+  background: -moz-linear-gradient(top, #f5f5f5 0%, #e1e1e1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, #f5f5f5 0%, #e1e1e1 100%);
+  background: -o-linear-gradient(top, #f5f5f5 0%, #e1e1e1 100%);
+  background: -ms-linear-gradient(top, #f5f5f5 0%, #e1e1e1 100%);
+  background: linear-gradient(to bottom, #f5f5f5 0%, #e1e1e1 100%);
+  border: 1px solid #c3c3c3;
+  text-shadow: 1px 1px 1px #fff;
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9), 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9), 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9), 1px 1px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 15px;
+  color: #595a5a !important;
+  padding: 15px 14px;
+  font-weight: bold !important;
+  font-size: 12px;
+  margin: 0 5px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 20px; }
+  body.not-front div.mail-list a:hover {
+    background: #a0d6d2; }
+  body.not-front div.mail-list a i {
+    margin-right: 10px; }
+body.not-front #block-block-3 {
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 20px; }
+  body.not-front #block-block-3 a {
+    font-weight: bold;
+    color: #005bbb;
+    font-size: 16px; }
+
+body .region-content h2, body .region-content h3 {
+  font-weight: normal; }
+
+body footer#footer {
+  font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif;
+  min-height: 186px;
+  background: #8996a0;
+  padding-top: 20px;
+  clear: both; }
+  body footer#footer .footer-navigation {
+    float: left;
+    width: 23%; }
+    body footer#footer .footer-navigation ul.links {
+      padding-left: 0; }
+      body footer#footer .footer-navigation ul.links li {
+        list-style: none;
+        font-size: 16px;
+        margin-bottom: 5px; }
+        body footer#footer .footer-navigation ul.links li a {
+          text-decoration: none;
+          color: white; }
+          body footer#footer .footer-navigation ul.links li a:hover {
+            color: rgba(255, 255, 255, 0.7); }
+  body footer#footer .footer-social {
+    float: left;
+    width: 36%; }
+    body footer#footer .footer-social h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: white; }
+    body footer#footer .footer-social ul.links {
+      padding-left: 0; }
+      body footer#footer .footer-social ul.links li {
+        list-style: none;
+        font-size: 16px;
+        margin-bottom: 5px; }
+        body footer#footer .footer-social ul.links li a {
+          font-size: 14px;
+          color: white;
+          text-decoration: none;
+          font-family: 'Whitney A', 'Whitney B', Arial, Helvetica, sans-serif !important; }
+          body footer#footer .footer-social ul.links li a.fa:before {
+            width: 25px;
+            display: inline-block;
+            color: #005bbb;
+            font-family: 'FontAwesome'; }
+          body footer#footer .footer-social ul.links li a:hover {
+            color: rgba(255, 255, 255, 0.7); }
+  body footer#footer .footer-copyright {
+    float: left;
+    width: 41%; }
+    body footer#footer .footer-copyright p {
+      font-size: 10px;
+      color: white; }
+      body footer#footer .footer-copyright p a {
+        color: white;
+        text-decoration: none; }
+  @media (min-width: 20em) and (max-width: 30em) {
+    body footer#footer .footer-navigation,
+    body footer#footer .footer-social,
+    body footer#footer .footer-copyright {
+      width: 100%;
+      float: none; } }
+
+body img {
+  max-width: 100%;
+  height: auto; }
+body aside, body div {
+  box-sizing: border-box; }
+
+body ul.tabs.primary {
+  border: none;
+  margin-bottom: 35px;
+  margin-left: 0;
+  padding-left: 0; }
+  body ul.tabs.primary li a {
+    background: none;
+    padding: 5px 20px;
+    border: none;
+    border-bottom: 10px solid rgba(137, 150, 160, 0.5); }
+    body ul.tabs.primary li a.active {
+      border-bottom: 10px solid #005bbb; }
+      body ul.tabs.primary li a.active:hover {
+        border-bottom: 10px solid rgba(0, 91, 187, 0.7); }
+    body ul.tabs.primary li a:hover {
+      border-bottom: 10px solid #8996a0; }
+
+.block-webform {
+  max-width: 470px; }
+  .block-webform .form-item, .block-webform .resizable-textarea {
+    margin: 0;
+    margin-top: .375em; }
+  .block-webform .webform-component--name-title, .block-webform .webform-component--Address {
+    font-weight: bold;
+    color: #666;
+    margin: .625em 0 .5em; }
+    .block-webform .webform-component--name-title p, .block-webform .webform-component--Address p {
+      display: inline-block;
+      margin: 0; }
+  .block-webform .webform-component--name-title::after {
+    content: "*";
+    color: #790000;
+    display: inline-block; }
+  .block-webform .form-required {
+    color: #790000; }
+  .block-webform input {
+    padding: .313em 0;
+    border: 1px solid #bbb;
+    margin-top: .375em; }
+  .block-webform .webform-component--first-name,
+  .block-webform .webform-component--last-name,
+  .block-webform .webform-component--city,
+  .block-webform .webform-component--state---province---region,
+  .block-webform .webform-component--zip---postal-code,
+  .block-webform .webform-component--country {
+    display: inline-block;
+    margin-top: .375em; }
+  .block-webform .webform-component--first-name {
+    margin-right: 1.3%; }
+  .block-webform .webform-component--first-name,
+  .block-webform .webform-component--last-name,
+  .block-webform .webform-component--company,
+  .block-webform .webform-component--phone,
+  .block-webform .webform-component--e-mail,
+  .block-webform .webform-component--city,
+  .block-webform .webform-component--state---province---region,
+  .block-webform .webform-component--zip---postal-code,
+  .block-webform .webform-component--country,
+  .block-webform .webform-component--subject {
+    width: 48.5%; }
+  .block-webform #edit-submitted-first-name,
+  .block-webform #edit-submitted-last-name,
+  .block-webform #edit-submitted-e-mail,
+  .block-webform #edit-submitted-phone,
+  .block-webform #edit-submitted-company,
+  .block-webform #edit-submitted-state-province-region,
+  .block-webform #edit-submitted-city,
+  .block-webform #edit-submitted-zip-postal-code,
+  .block-webform #edit-submitted-subject {
+    width: 97.5%; }
+  .block-webform #edit-submitted-address-line-2,
+  .block-webform #edit-submitted-street-address {
+    width: 96%; }
+  .block-webform #edit-submitted-country {
+    width: 99%; }
+  .block-webform #edit-submitted-subject {
+    display: block; }
+  .block-webform .description {
+    margin: .188em 0 .75em;
+    color: #666;
+    font-size: .875em;
+    letter-spacing: .5pt;
+    white-space: nowrap;
+    line-height: 26px; }
+  .block-webform label {
+    color: #666;
+    margin: .625em 0 .5em;
+    display: inline-block; }
+  .block-webform h2 {
+    display: none; }
+  .block-webform label.element-invisible {
+    display: none; }
+  .block-webform textarea {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    resize: none;
+    max-height: 9.375em;
+    min-height: 9.375em; }
+  .block-webform .grippie {
+    visibility: hidden; }
+  .block-webform .webform-submit {
+    padding: .188em; }
+  .block-webform select {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 2px;
+    color: #4e4e4e;
+    margin-left: .063em;
+    margin-bottom: .313em; }
+
+#flexslider-1 {
+  border: none; }
+
+#block-views-flexslider-block .flex-control-nav {
+  bottom: 20px;
+  z-index: 1000; }
+
+.slides li {
+  position: relative; }
+  .slides li .views-field-body {
+    max-width: 380px;
+    height: 257px;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 50px 0 50px;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 1;
+    visibility: visible;
+    bottom: -275px; }
+    .slides li .views-field-body a {
+      color: white; }
+    .slides li .views-field-body a:hover {
+      text-decoration: none; }
+    .slides li .views-field-body h1 {
+      font-size: 24px;
+      margin: 0px 0 10px; }
+    .slides li .views-field-body p {
+      color: white;
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      margin: 0;
+      line-height: 30px; }
+
+.slides li {
+  overflow: hidden; }
+.slides a:nth-child(2) .views-field-body {
+  background-image: url("../img/blueoverlay.png"); }
+.slides a:nth-child(3) .views-field-body {
+  background-image: url("../img/greenoverlay.png"); }
+.slides a:nth-child(4) .views-field-body {
+  background-image: url("../img/orangeoverlay.png"); }
+.slides a:nth-child(5) .views-field-body {
+  background-image: url("../img/greyoverlay.png"); }
+.slides a:nth-child(6) .views-field-body {
+  background-image: url("../img/yellowoverlay.png"); }
+.slides a:nth-child(7) .views-field-body {
+  background-image: url("../img/tiffanyoverlay.png"); }
+.slides li:nth-child(even) .views-field-body {
+  left: 91px; }
+.slides li:nth-child(odd) .views-field-body {
+  right: 91px; }
+
+.flex-pauseplay {
+  position: relative; }
+
+.flex-pauseplay a {
+  bottom: 35px;
+  right: 40%;
+  z-index: 2000;
+  left: auto; }
+
+@media (min-width: 30.0625em) and (max-width: 64em) {
+  .flex-pauseplay a {
+    right: 37%; } }
+@media (min-width: 20em) and (max-width: 30em) {
+  .flex-pauseplay a {
+    right: 25%; } }
+.view-leadership .views-row {
+  margin-bottom: 50px; }
+.view-leadership .views-field-name .field-content {
+  color: #003478;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 10px; }
+.view-leadership .views-field-field-team-image img {
+  padding-bottom: 5px; }
+.view-leadership .views-field-field-link a {
+  margin-left: 0px;
+  font-size: 16px;
+  color: #005bbb;
+  font-weight: 600;
+  text-decoration: none; }
+
+#node-724 .blue {
+  color: #005bbb;
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 30px; }
+
+.view-our-thinking-block .views-field-name-1 {
+  padding-bottom: 10px; }
+  .view-our-thinking-block .views-field-name-1 span {
+    color: #003478;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px; }
+.view-our-thinking-block .views-field-description {
+  display: inline-block;
+  position: absolute; }
+  .view-our-thinking-block .views-field-description p {
+    width: 320px;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    min-height: 50px; }
+.view-our-thinking-block .views-field-field-teaser-image {
+  display: inline-block;
+  padding-bottom: 50px; }
+.view-our-thinking-block .views-field-nothing {
+  display: inline-block;
+  position: absolute;
+  margin-top: 100px; }
+  .view-our-thinking-block .views-field-nothing a {
+    text-decoration: none;
+    width: 300px;
+    font-size: 16px;
+    color: #005bbb;
+    font-weight: 600;
+    margin-left: 20px; }
+
+.view-governance-outsourcing-view .view-header,
+.view-investment-policy .view-header,
+.view-investment-risk-management .view-header,
+.view-strategic-perspectives .view-header,
+.view-investment-briefs .view-header,
+.view-id-white_papers .view-header,
+.view-focuspoint-webinars .view-header,
+.view-idea-lab-year-in-review .view-header,
+.view-multimedia .view-header {
+  float: right;
+  margin: 12px 0;
+  clear: both;
+  width: 100%;
+  text-align: right; }
+  .view-governance-outsourcing-view .view-header p,
+  .view-investment-policy .view-header p,
+  .view-investment-risk-management .view-header p,
+  .view-strategic-perspectives .view-header p,
+  .view-investment-briefs .view-header p,
+  .view-id-white_papers .view-header p,
+  .view-focuspoint-webinars .view-header p,
+  .view-idea-lab-year-in-review .view-header p,
+  .view-multimedia .view-header p {
+    margin: 0; }
+  .view-governance-outsourcing-view .view-header a,
+  .view-investment-policy .view-header a,
+  .view-investment-risk-management .view-header a,
+  .view-strategic-perspectives .view-header a,
+  .view-investment-briefs .view-header a,
+  .view-id-white_papers .view-header a,
+  .view-focuspoint-webinars .view-header a,
+  .view-idea-lab-year-in-review .view-header a,
+  .view-multimedia .view-header a {
+    text-decoration: none; }
+  .view-governance-outsourcing-view .view-header h1,
+  .view-investment-policy .view-header h1,
+  .view-investment-risk-management .view-header h1,
+  .view-strategic-perspectives .view-header h1,
+  .view-investment-briefs .view-header h1,
+  .view-id-white_papers .view-header h1,
+  .view-focuspoint-webinars .view-header h1,
+  .view-idea-lab-year-in-review .view-header h1,
+  .view-multimedia .view-header h1 {
+    text-align: left; }
+.view-governance-outsourcing-view .view-content .views-row-even,
+.view-investment-policy .view-content .views-row-even,
+.view-investment-risk-management .view-content .views-row-even,
+.view-strategic-perspectives .view-content .views-row-even,
+.view-investment-briefs .view-content .views-row-even,
+.view-id-white_papers .view-content .views-row-even,
+.view-focuspoint-webinars .view-content .views-row-even,
+.view-idea-lab-year-in-review .view-content .views-row-even,
+.view-multimedia .view-content .views-row-even {
+  margin-left: 45px; }
+.view-governance-outsourcing-view .view-content .views-row,
+.view-investment-policy .view-content .views-row,
+.view-investment-risk-management .view-content .views-row,
+.view-strategic-perspectives .view-content .views-row,
+.view-investment-briefs .view-content .views-row,
+.view-id-white_papers .view-content .views-row,
+.view-focuspoint-webinars .view-content .views-row,
+.view-idea-lab-year-in-review .view-content .views-row,
+.view-multimedia .view-content .views-row {
+  width: 300px;
+  height: 195px;
+  background: #e7e7e9;
+  display: inline-block;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: default; }
+  .view-governance-outsourcing-view .view-content .views-row .views-field-nothing,
+  .view-investment-policy .view-content .views-row .views-field-nothing,
+  .view-investment-risk-management .view-content .views-row .views-field-nothing,
+  .view-strategic-perspectives .view-content .views-row .views-field-nothing,
+  .view-investment-briefs .view-content .views-row .views-field-nothing,
+  .view-id-white_papers .view-content .views-row .views-field-nothing,
+  .view-focuspoint-webinars .view-content .views-row .views-field-nothing,
+  .view-idea-lab-year-in-review .view-content .views-row .views-field-nothing,
+  .view-multimedia .view-content .views-row .views-field-nothing {
+    position: absolute;
+    background: rgba(25, 72, 133, 0.8);
+    z-index: 50;
+    width: 300px;
+    padding: 10px;
+    color: #FFF;
+    height: 195px;
+    top: 140px;
+    overflow-y: hidden;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+    .view-governance-outsourcing-view .view-content .views-row .views-field-nothing h4,
+    .view-investment-policy .view-content .views-row .views-field-nothing h4,
+    .view-investment-risk-management .view-content .views-row .views-field-nothing h4,
+    .view-strategic-perspectives .view-content .views-row .views-field-nothing h4,
+    .view-investment-briefs .view-content .views-row .views-field-nothing h4,
+    .view-id-white_papers .view-content .views-row .views-field-nothing h4,
+    .view-focuspoint-webinars .view-content .views-row .views-field-nothing h4,
+    .view-idea-lab-year-in-review .view-content .views-row .views-field-nothing h4,
+    .view-multimedia .view-content .views-row .views-field-nothing h4 {
+      color: #FFF;
+      font-size: 16px;
+      padding-bottom: 10px;
+      height: 48px;
+      margin: 0;
+      overflow: hidden; }
+    .view-governance-outsourcing-view .view-content .views-row .views-field-nothing p,
+    .view-investment-policy .view-content .views-row .views-field-nothing p,
+    .view-investment-risk-management .view-content .views-row .views-field-nothing p,
+    .view-strategic-perspectives .view-content .views-row .views-field-nothing p,
+    .view-investment-briefs .view-content .views-row .views-field-nothing p,
+    .view-id-white_papers .view-content .views-row .views-field-nothing p,
+    .view-focuspoint-webinars .view-content .views-row .views-field-nothing p,
+    .view-idea-lab-year-in-review .view-content .views-row .views-field-nothing p,
+    .view-multimedia .view-content .views-row .views-field-nothing p {
+      color: #FFF;
+      font-size: 14px;
+      line-height: 16px !important; }
+    .view-governance-outsourcing-view .view-content .views-row .views-field-nothing a,
+    .view-investment-policy .view-content .views-row .views-field-nothing a,
+    .view-investment-risk-management .view-content .views-row .views-field-nothing a,
+    .view-strategic-perspectives .view-content .views-row .views-field-nothing a,
+    .view-investment-briefs .view-content .views-row .views-field-nothing a,
+    .view-id-white_papers .view-content .views-row .views-field-nothing a,
+    .view-focuspoint-webinars .view-content .views-row .views-field-nothing a,
+    .view-idea-lab-year-in-review .view-content .views-row .views-field-nothing a,
+    .view-multimedia .view-content .views-row .views-field-nothing a {
+      color: #fdc003;
+      font-size: 14px;
+      line-height: 16px !important;
+      font-style: italic;
+      text-decoration: none; }
+    .view-governance-outsourcing-view .view-content .views-row .views-field-nothing:hover,
+    .view-investment-policy .view-content .views-row .views-field-nothing:hover,
+    .view-investment-risk-management .view-content .views-row .views-field-nothing:hover,
+    .view-strategic-perspectives .view-content .views-row .views-field-nothing:hover,
+    .view-investment-briefs .view-content .views-row .views-field-nothing:hover,
+    .view-id-white_papers .view-content .views-row .views-field-nothing:hover,
+    .view-focuspoint-webinars .view-content .views-row .views-field-nothing:hover,
+    .view-idea-lab-year-in-review .view-content .views-row .views-field-nothing:hover,
+    .view-multimedia .view-content .views-row .views-field-nothing:hover {
+      top: 0; }
+
+.page-category-library-idea-lab-documents .view-header,
+.page-category-library-focus-point-webinars .view-header,
+.page-category-multimedia .view-header,
+.page-category-fiduciary-insights .view-header {
+  text-align: left; }
+  .page-category-library-idea-lab-documents .view-header h1,
+  .page-category-library-focus-point-webinars .view-header h1,
+  .page-category-multimedia .view-header h1,
+  .page-category-fiduciary-insights .view-header h1 {
+    margin-top: 0;
+    margin-bottom: 80px; }
+
+@media (max-width: 57.625em) {
+  .view-display-id-page .view-content .views-row-even {
+    margin-left: 10px !important; } }
+body .paragraphs-items-field-solutions .paragraphs-item-focused-solutions {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  color: #666666;
+  background: #f4f4f4;
+  transition: background .5s; }
+  body .paragraphs-items-field-solutions .paragraphs-item-focused-solutions h2 {
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer; }
+    body .paragraphs-items-field-solutions .paragraphs-item-focused-solutions h2 i.fa-list-ul {
+      float: right;
+      color: #999; }
+  body .paragraphs-items-field-solutions .paragraphs-item-focused-solutions .field-name-field-body {
+    display: none;
+    margin-top: 20px;
+    width: 100% !important; }
+  body .paragraphs-items-field-solutions .paragraphs-item-focused-solutions.white {
+    background: #fff;
+    transition: background .5s; }
+
+body form.webform-client-form.webform-client-form-881 .form-item {
+  margin: 10px 0 0; }
+  body form.webform-client-form.webform-client-form-881 .form-item p,
+  body form.webform-client-form.webform-client-form-881 .form-item strong {
+    margin-bottom: 0; }
+body form.webform-client-form.webform-client-form-881 label {
+  color: #666;
+  margin-bottom: 15px; }
+body form.webform-client-form.webform-client-form-881 .description {
+  color: #666; }
+body form.webform-client-form.webform-client-form-881 .webform-component--first-name,
+body form.webform-client-form.webform-client-form-881 .webform-component--last-name,
+body form.webform-client-form.webform-client-form-881 .webform-component--company,
+body form.webform-client-form.webform-client-form-881 .webform-component--title,
+body form.webform-client-form.webform-client-form-881 .webform-component--city,
+body form.webform-client-form.webform-client-form-881 .webform-component--state---province---region,
+body form.webform-client-form.webform-client-form-881 .webform-component--zip---postal-code,
+body form.webform-client-form.webform-client-form-881 .webform-component--country {
+  width: 48%;
+  float: left;
+  margin-right: 10px;
+  margin-top: 25px; }
+  body form.webform-client-form.webform-client-form-881 .webform-component--first-name input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--first-name select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--last-name input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--last-name select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--company input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--company select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--title input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--title select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--city input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--city select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--state---province---region input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--state---province---region select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--zip---postal-code input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--zip---postal-code select,
+  body form.webform-client-form.webform-client-form-881 .webform-component--country input,
+  body form.webform-client-form.webform-client-form-881 .webform-component--country select {
+    width: 99%; }
+body form.webform-client-form.webform-client-form-881 .webform-component--first-name,
+body form.webform-client-form.webform-client-form-881 .webform-component--last-name {
+  margin-top: 15px; }
+body form.webform-client-form.webform-client-form-881 .webform-component--email,
+body form.webform-client-form.webform-client-form-881 .webform-component--address-markup,
+body form.webform-client-form.webform-client-form-881 .webform-component--subscribe-to- {
+  clear: both;
+  padding-top: 20px; }
+body form.webform-client-form.webform-client-form-881 .webform-component--street-address input,
+body form.webform-client-form.webform-client-form-881 .webform-component--address-line-2 input,
+body form.webform-client-form.webform-client-form-881 .webform-component--email input {
+  width: 97.5%; }
+body form.webform-client-form.webform-client-form-881 .form-checkboxes div.form-item {
+  margin: 25px 0; }
+
+/*# sourceMappingURL=main.css.map */
